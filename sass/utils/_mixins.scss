@@ -1,0 +1,14 @@
+/**
+  |============================
+  | сітка із застосуванням flex-box
+  |============================
+*/
+  @mixin card-set($indent: 30px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: calc(-1 * #{$indent} / 2);
+  }
+  @mixin card-set-item($indent: 30px, $items: 4) {
+    flex-basis: calc((100% - #{$indent} * #{$items}) / #{$items});
+    margin: calc(#{$indent} / 2);
+  }

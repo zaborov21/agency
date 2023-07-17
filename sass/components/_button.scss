@@ -1,0 +1,16 @@
+.main-button {
+    padding: 6px 22px;
+  
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transition: background-color $time $time-function,
+      color $time $time-function,
+      box-shadow $time $time-function;
+  }

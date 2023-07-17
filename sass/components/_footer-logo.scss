@@ -1,0 +1,21 @@
+.footer_logo {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: $primary-white-color;
+
+  text-decoration: none;
+  font-family: $secondary-font, sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+  }
+}

@@ -1,0 +1,58 @@
+.page-header--boreder {
+  border-bottom: 1px solid $border-color;
+}
+.control-list {
+  @extend %list;
+  display: flex;
+
+  margin-bottom: 50px;
+
+  @media screen and(max-width: 1199px){
+    margin-bottom: 30px;
+  }
+
+  &__item:nth-child(-n + 3)  {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+
+  @media screen and (max-width: 767px) {
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 768px) {
+     justify-content: center;
+  }
+}
+.control-list__button {
+  padding: 6px 22px;
+
+  font-family: $main-font, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  background-color: $filtr-button-color;
+  color: $primary-text-color;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color $time $time-function, color $time $time-function,
+    box-shadow $time $time-function;
+
+  &:hover,
+  &:focus {
+    color: $primary-white-color;
+    background-color: $accent-color;
+
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}

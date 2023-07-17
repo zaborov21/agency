@@ -1,0 +1,26 @@
+.address-list {
+  @extend %list;
+
+  &__item:not(:last-child) {
+    margin-bottom: 8px;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
+  }
+}
+.address-list__link {
+  color: rgba(255, 255, 255, 0.6);
+
+  text-decoration: none;
+  line-height: 1.71;
+  transition: color $time $time-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+.address-list__link--color {
+  color: $primary-white-color;
+}

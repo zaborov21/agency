@@ -1,0 +1,50 @@
+.section-experience {
+  padding-top: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+.experience__title {
+  margin-bottom: 50px;
+
+  color: $primary-text-color;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+}
+.experience-list {
+  @extend %list;
+
+  @include card-set();
+
+  &__item {
+    @include card-set-item(30px, 3);
+  }
+}
+.wrapper-img {
+  position: relative;
+}
+.experience-thumb {
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+
+  background: rgba(47, 48, 58, 0.8);
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: $primary-white-color;
+  }
+}
