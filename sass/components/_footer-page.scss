@@ -12,7 +12,8 @@
     }
   }
 }
-.page-footer__wrapper{
+
+.page-footer__wrapper {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     align-items: baseline;
@@ -28,8 +29,23 @@
     align-items: baseline;
   }
 }
+
 .wrapper-address {
   @media screen and (max-width: 1199px) {
     text-align: center;
   }
+}
+.address-list__link.rodos:not(:last-child){
+  margin-bottom: 9px;
+}
+.rodo {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.copyright{
+  margin-bottom: 9px;
+  color: rgba(255,255,255,0.6);
 }

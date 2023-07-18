@@ -2,10 +2,10 @@
     display: none;
     position: fixed;
     bottom: 70px;
-    right: 30px;
+    right: 50px;
     z-index: 199;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     outline: none;
     cursor: pointer;
     border: none;
@@ -14,13 +14,13 @@
 }
 
 .scroll-btn {
-    width: 50px;
-    height: 50px;
-    transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-    fill: var(--secondary-color);
+    width: 40px;
+    height: 40px;
+    transition: color $time $time-function;
+    fill: $accent-color;
     border-radius: 50%;
-}
 
-.scroll-btn:hover {
-    fill: var(--primary-color);
+    &:hover {
+        fill: $hero-btn-color;
+    }
 }
