@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg">
   <defs>
+  <symbol id="icon-go-up" viewBox="0 0 32 32">
+   <path fill="#79aeff" style="fill: var(--color7, #79aeff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"/>
+   <path fill="none" stroke="#fff" style="stroke: var(--color5, #fff)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="0.8421" d="M21.263 18.526l-5.263-5.263-5.263 5.263"/>
+  </symbol>
   <symbol id="icon-menu" viewBox="0 0 40 40">
       <path d="M8 14.667V12h24v2.667H8Zm0 6.666h24v-2.666H8v2.666ZM8 28h24v-2.667H8V28Z"/>
     </symbol>
